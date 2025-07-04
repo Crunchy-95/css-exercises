@@ -7,6 +7,11 @@ body {
   background-color: orange;
 }
 
+.body {
+  display: flex;
+  flex: 1;
+}
+
 ul {
   list-style: none;
   display: flex;
@@ -14,6 +19,10 @@ ul {
   padding: 0;
   flex-direction: column;
   gap: 8px;
+}
+
+li {
+  margin-bottom: 16px;
 }
 
 a {
@@ -30,7 +39,7 @@ a {
   font-size: 32px;
   font-weight: 900;
   align-items: center;
-  padding: 8px;
+  padding: 0 16px;
 
 }
 
@@ -49,7 +58,6 @@ a {
   box-sizing: border-box;
   font-size: 24px;
   padding: 16px;
-  width: 300px;
   flex-shrink: 0;
 }
 
@@ -57,18 +65,21 @@ a {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  /* display: flex;
-  flex-wrap: wrap; */
-  gap: 16px;
+  width: 300px;
+
 }
 
-.container {
-  background-color: green;
-  display: flex;
-}
 
 .card-container {
   background-color: red;
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 48px;
+}
+
+.card {
+  width: 300px;
+  padding: 16px;
+
 }
